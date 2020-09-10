@@ -1,8 +1,38 @@
-html, body {
+html,
+body {
     padding: 0;
     margin: 0;
 }
 
 section {
-    margin-top: 10px;
+    margin: 10px auto;
+    height: 500px;
+    width: 500px;
+
+}
+
+.task-one::before {
+    content: "Once upon a time";
+}
+
+.task-one::after {
+    content: "The end";
+}
+
+.task-two {
+    background-image: url("assets/beach.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img {
+    height: 100%;
+}
+
+.task-two {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.task-three {
+    transform: rotate(180deg);
 }
